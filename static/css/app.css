@@ -1,10 +1,119 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-}
+table,
+    th,
+    td {
+      border: 1px solid black;
+      font-size: 20px;
+      width: 500px;
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
+    }
+
+    td {
+      padding: 10px;
+      height: 100px;
+    }
+
+    #InfoMe {
+      padding-top: 10px;
+    }
+
+    #InfoMe h1 {
+      margin: 40px auto;
+      width: 30%;
+      /* outline: 1px solid black; */
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: rgb(247, 242, 242);
+    }
+
+    section {
+      /* outline: 1px solid red; */
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    section * {
+      margin: 0 auto;
+    }
+
+    section p {
+      font-size: 24px;
+    }
+
+    #InfoMe li img {
+      width: 300px;
+      height: 300px;
+    }
+
+    #InfoMe ul li,
+    #InfoMe ol li {
+
+      padding-bottom: 50px;
+      width: 250px;
+      margin: 0 auto;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      /* outline: 1px solid blue; */
+    }
+
+    #InfoMe p {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+
+    h2,
+    h3 {
+      width: 400px;
+      margin: 20px auto;
+      font-size: 40px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-align: center;
+
+    }
+
+    .grad {
+      width: 50%;
+      background-image: url("./Images/UWI_Images.jpg");
+      /* opacity: 0.5; */
+      background-size: contain;
+      height: 200px;
+      color: white;
+      padding: 30px;
+
+    }
+
+    .grad ol li {
+      font-size: 40px;
+    }
+
+    #EnterInfo {
+      text-align: center;
+      margin: 0px auto;
+      padding-bottom: 30px;
+    }
+
+    #EnterInfo h3~* {
+      margin:
+        10px;
+    }
+
+    hr {
+      width: 60%;
+    }
+
+    .favBooks img {
+      width: 300px;
+      height: 500px;
+    }
+
+    .favBooks table {
+      display: inline-block;
+      margin: 0 30px;
+    }

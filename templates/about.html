@@ -1,11 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <meta charset="UTF-8">
- <title>My Website - About</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" >
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
+  <title>My Personal Website</title>
+
 </head>
+
 <body>
- <h1>Place Your Name Here</h1>
- <p>Write a short paragraph about yourself here.</p>
+  <main>
+    <section id="InfoMe">
+      <h1><u>About Patrick Witter</u></h1>
+      <p>
+        Hello, my name is Patrick Witter.
+        I attended the following schools:
+      </p>
+      <br />
+
+      <ul>
+        <li> 
+            <img src=" {{ url_for('static', filename='images/St.AloyCrest.png') }}" />
+
+          <br /> <br />
+          St.Aloysius Primary School
+        </li>
+        <li>
+          <img src="{{ url_for('static', filename='images/campionCrest.jpg') }}" />
+          <br /> <br />
+          Campion College
+        </li>
+      </ul>
+      <p> I grew up in Spanish Town, St.Catherine and
+        my goals after graduation are:
+      </p>
+      <br />
+
+      <div class="grad">
+        <ol>
+          <li> Get a job</li>
+          <li> Further my studies in Computer Science.</li>
+        </ol>
+      </div>
+
+
+      <br />
+      <h3> Favourite Sites</h3>
+      <ul>
+        <li>
+          <a href="https://www.codecademy.com/learn">Codeacademy</a>
+        </li>
+        <li>
+          <a href="https://stackoverflow.com/">Stackoverflow</a>
+        </li>
+        <li>
+          <a href="https://www.menshealth.com/">Men's Health</a>
+        </li>
+      </ul>
+
+      <div class="favBooks">
+
+        <h3>Favourite Books</h3>
+        <img src="{{ url_for('static', filename='images/Shortness.jpg') }}" alt="Shortness of Life book img" />
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Author</th>
+          </tr>
+          <tr>
+            <td>On the Shortness of Life</td>
+            <td>Lucius Annaeus Seneca</td>
+          </tr>
+          <tr>
+            <td>Man's Search for Meaning</td>
+            <td>Viktor Frankl</td>
+
+          </tr>
+        </table>
+        <img src="{{ url_for('static', filename='images/Search.jpg') }}" alt=" Search for Meaning book img">
+      </div>
+
+
+      <br />
+    </section>
+    <hr />
+    <section id="EnterInfo">
+
+      <h3> About you </h3>
+      <br />
+      <form>
+        <textarea id="aboutyou" cols="25" rows="5">
+      Tell me about yourself
+      </textarea>
+
+        <br />
+        <br />
+        <label for="favFood">
+          What is your favoutite fast food place?
+        </label>
+
+        <select id="favFood" name="favFood">
+          <option value="kfc">KFC</option>
+          <option value="bk">Burger King</option>
+          <option value="islandG">Island Grill</option>
+        </select>
+        <br />
+        <br />
+
+        <p>
+          What do you do for fun?
+        </p>
+        <br />
+        <input id="movies" type="checkbox" name="fun" value="movies" />
+        <label for="movies">
+          Watch movies
+        </label>
+
+        <input id="football" type="checkbox" name="fun" value="football" />
+
+        <label for="football">
+          Play Football
+        </label>
+        <br />
+        <br />
+        <label for="info">
+          Send me your Info!!
+        </label>
+        <input id="info" type="text" name="email" placeholder="Enter your Email" />
+
+        <br />
+        <br />
+
+        <p>
+          Did you like my Website?
+        </p>
+        <br /><br />
+        <input id="yes" type="radio" name="liked" value="yes">
+        <label for="yes">
+          Yes
+        </label>
+
+        <input id="no" type="radio" name="liked" value="no">
+        <label for="no">
+          No
+        </label>
+
+        <br />
+
+    </section>
+    </form>
+    <main>
 </body>
+
 </html>
